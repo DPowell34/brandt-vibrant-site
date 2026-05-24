@@ -4,7 +4,16 @@
    Deep black background, yellow accents, grey text
    ============================================================ */
 import { Link } from "wouter";
-import { Phone, Mail, MapPin, Facebook, Twitter, Youtube, Instagram } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
+
+// TikTok SVG icon (not in lucide-react)
+function TikTokIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+    </svg>
+  );
+}
 
 export default function Footer() {
   return (
@@ -39,28 +48,16 @@ export default function Footer() {
                 <Facebook size={16} />
               </a>
               <a
-                href="https://www.twitter.com"
+                href="https://www.tiktok.com/@brandt.management"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded flex items-center justify-center transition-colors duration-150"
                 style={{ backgroundColor: "#1C1C1C", color: "#9E9E9E" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#FFB800"; (e.currentTarget as HTMLAnchorElement).style.color = "#111111"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#1C1C1C"; (e.currentTarget as HTMLAnchorElement).style.color = "#9E9E9E"; }}
-                aria-label="Twitter / X"
+                aria-label="TikTok"
               >
-                <Twitter size={16} />
-              </a>
-              <a
-                href="https://www.youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded flex items-center justify-center transition-colors duration-150"
-                style={{ backgroundColor: "#1C1C1C", color: "#9E9E9E" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#FFB800"; (e.currentTarget as HTMLAnchorElement).style.color = "#111111"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#1C1C1C"; (e.currentTarget as HTMLAnchorElement).style.color = "#9E9E9E"; }}
-                aria-label="YouTube"
-              >
-                <Youtube size={16} />
+                <TikTokIcon size={16} />
               </a>
               <a
                 href="https://www.instagram.com/BrandtManagementServices"
