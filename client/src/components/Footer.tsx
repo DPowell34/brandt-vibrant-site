@@ -27,7 +27,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/profile.php?id=61575299549114"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded flex items-center justify-center transition-colors duration-150"
