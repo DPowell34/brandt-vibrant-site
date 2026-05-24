@@ -40,14 +40,14 @@ export default function Navbar() {
         boxShadow: scrolled ? "0 4px 24px rgba(0,0,0,0.5)" : "none",
       }}
     >
-      <div className="container flex items-center justify-between h-16 lg:h-20">
+      <div className="container flex items-center justify-between h-20 lg:h-24">
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <img
             src="/manus-storage/brandt-logo_e831566c.png"
             alt="Brandt Management Services — Infinite Possibilities"
-            className="h-12 w-auto object-contain"
-            style={{ maxWidth: "160px" }}
+            className="h-16 w-auto object-contain"
+            style={{ maxWidth: "200px" }}
           />
         </Link>
 

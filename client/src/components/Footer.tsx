@@ -27,8 +27,8 @@ export default function Footer() {
               <img
                 src="/manus-storage/brandt-logo_e831566c.png"
                 alt="Brandt Management Services — Infinite Possibilities"
-                className="h-20 w-auto object-contain"
-                style={{ maxWidth: "200px" }}
+                className="h-28 w-auto object-contain"
+                style={{ maxWidth: "260px" }}
               />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#9E9E9E", fontFamily: "'Nunito Sans', sans-serif", maxWidth: "340px" }}>
