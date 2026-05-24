@@ -40,6 +40,7 @@ const milestones = [
   { year: "2018", event: "Added property preservation, rehabilitation, and warranty support services." },
   { year: "2021", event: "Extended coverage across the Southeast US with a comprehensive 14+ service portfolio." },
   { year: "Today", event: "Continuing to grow with a commitment to quality work and excellent customer service." },
+  { year: "Soon", event: "Future expansion into Las Vegas, NV — bringing Brandt's trusted property services to the Southwest United States." },
 ];
 
 export default function About() {
@@ -255,6 +256,118 @@ export default function About() {
                 className="w-full rounded-sm object-cover"
                 style={{ maxHeight: "420px" }}
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Las Vegas Expansion */}
+      <section className="py-24" style={{ backgroundColor: "#111111" }}>
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p
+                className="text-xs font-bold tracking-widest uppercase mb-3 reveal"
+                style={{ color: "#FFB800", fontFamily: "'Barlow Condensed', sans-serif" }}
+              >
+                Coming Soon
+              </p>
+              <h2
+                className="section-heading font-extrabold text-white mb-6 reveal reveal-delay-1"
+                style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "clamp(2rem, 4vw, 3rem)", textTransform: "uppercase" }}
+              >
+                Expanding to<br />
+                <span style={{ color: "#FFB800" }}>Las Vegas, NV</span>
+              </h2>
+              <p
+                className="text-base leading-relaxed mb-5 reveal reveal-delay-2"
+                style={{ color: "#C8C8C8", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                Brandt Management Services is excited to announce its upcoming expansion into Las Vegas, Nevada. Building on over a decade of trusted service in the Southeast, we're bringing our full suite of property solutions to the Southwest.
+              </p>
+              <p
+                className="text-base leading-relaxed mb-8 reveal reveal-delay-3"
+                style={{ color: "#9E9E9E", fontFamily: "'Nunito Sans', sans-serif" }}
+              >
+                Whether you're a homeowner, property manager, or real estate investor in the Las Vegas area, Brandt will soon be your go-to partner for quality property care — from painting and rehabilitation to lawn maintenance and beyond.
+              </p>
+              <div
+                className="inline-flex items-center gap-4 px-5 py-4 rounded-sm reveal reveal-delay-4"
+                style={{ backgroundColor: "#1A1A1A", border: "1px solid rgba(255,184,0,0.3)" }}
+              >
+                <div
+                  className="w-10 h-10 rounded-sm flex items-center justify-center flex-shrink-0"
+                  style={{ backgroundColor: "rgba(255,184,0,0.15)", color: "#FFB800" }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p className="text-xs font-bold tracking-widest uppercase" style={{ color: "#FFB800", fontFamily: "'Barlow Condensed', sans-serif" }}>Future Location</p>
+                  <p className="text-sm font-semibold text-white" style={{ fontFamily: "'Nunito Sans', sans-serif" }}>Las Vegas, NV</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Map / visual card */}
+            <div className="reveal reveal-delay-2">
+              <div
+                className="rounded-sm overflow-hidden relative"
+                style={{ backgroundColor: "#1A1A1A", border: "1px solid #2A2A2A", minHeight: "340px" }}
+              >
+                {/* Stylized map placeholder */}
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8"
+                  style={{
+                    background: "radial-gradient(ellipse at center, rgba(255,184,0,0.08) 0%, rgba(17,17,17,0) 70%)",
+                  }}
+                >
+                  {/* Connection line visual */}
+                  <div className="w-full flex items-center justify-between gap-4 px-4">
+                    <div className="flex flex-col items-center gap-2">
+                      <div
+                        className="w-14 h-14 rounded-sm flex items-center justify-center font-extrabold text-xs"
+                        style={{ backgroundColor: "#FFB800", color: "#111111", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "0.65rem", letterSpacing: "0.05em", textAlign: "center", lineHeight: 1.2 }}
+                      >
+                        ORLANDO<br />FL
+                      </div>
+                      <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "#FFB800", fontFamily: "'Barlow Condensed', sans-serif" }}>Est. 2012</span>
+                    </div>
+
+                    {/* Dashed line */}
+                    <div className="flex-1 flex items-center gap-1">
+                      {Array.from({ length: 8 }).map((_, i) => (
+                        <div key={i} className="flex-1 h-px" style={{ backgroundColor: i % 2 === 0 ? "#FFB800" : "transparent" }} />
+                      ))}
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB800"><path d="M5 12h14M12 5l7 7-7 7" stroke="#FFB800" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/></svg>
+                    </div>
+
+                    <div className="flex flex-col items-center gap-2">
+                      <div
+                        className="w-14 h-14 rounded-sm flex items-center justify-center font-extrabold text-xs relative"
+                        style={{ backgroundColor: "#2A2A2A", color: "#FFB800", border: "2px dashed #FFB800", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "0.65rem", letterSpacing: "0.05em", textAlign: "center", lineHeight: 1.2 }}
+                      >
+                        LAS<br />VEGAS NV
+                      </div>
+                      <span className="text-xs font-bold tracking-widest uppercase" style={{ color: "#9E9E9E", fontFamily: "'Barlow Condensed', sans-serif" }}>Coming Soon</span>
+                    </div>
+                  </div>
+
+                  <div
+                    className="px-5 py-3 rounded-sm text-center"
+                    style={{ backgroundColor: "rgba(255,184,0,0.1)", border: "1px solid rgba(255,184,0,0.25)" }}
+                  >
+                    <p
+                      className="font-extrabold text-white text-sm"
+                      style={{ fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.06em" }}
+                    >
+                      Southeast <span style={{ color: "#FFB800" }}>→</span> Southwest
+                    </p>
+                    <p className="text-xs mt-1" style={{ color: "#9E9E9E", fontFamily: "'Nunito Sans', sans-serif" }}>
+                      Brandt is growing across the United States
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
