@@ -81,7 +81,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden"
-        style={{ paddingTop: "112px" }}
+        style={{ paddingTop: "128px" }}
       >
         {/* Background image */}
         <div className="absolute inset-0">
