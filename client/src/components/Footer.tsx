@@ -4,7 +4,7 @@
    Deep black background, yellow accents, grey text
    ============================================================ */
 import { Link } from "wouter";
-import { Phone, Mail, MapPin, Facebook, Twitter, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Twitter, Youtube, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -61,6 +61,18 @@ export default function Footer() {
                 aria-label="YouTube"
               >
                 <Youtube size={16} />
+              </a>
+              <a
+                href="https://www.instagram.com/BrandtManagementServices"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded flex items-center justify-center transition-colors duration-150"
+                style={{ backgroundColor: "#1C1C1C", color: "#9E9E9E" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#FFB800"; (e.currentTarget as HTMLAnchorElement).style.color = "#111111"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#1C1C1C"; (e.currentTarget as HTMLAnchorElement).style.color = "#9E9E9E"; }}
+                aria-label="Instagram"
+              >
+                <Instagram size={16} />
               </a>
             </div>
           </div>
