@@ -14,24 +14,13 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
-              <div
-                className="w-10 h-10 flex items-center justify-center rounded-sm font-extrabold text-sm flex-shrink-0"
-                style={{ backgroundColor: "#FFB800", color: "#111111", fontFamily: "'Barlow Condensed', sans-serif" }}
-              >
-                BMS
-              </div>
-              <div className="flex flex-col leading-none">
-                <span
-                  className="font-extrabold text-white text-lg tracking-wide"
-                  style={{ fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.08em" }}
-                >
-                  Brandt Management Services
-                </span>
-                <span className="text-xs tracking-widest" style={{ color: "#FFB800", fontFamily: "'Nunito Sans', sans-serif", fontWeight: 600, textTransform: "uppercase" }}>
-                  The Property Service People
-                </span>
-              </div>
+            <div className="mb-4">
+              <img
+                src="/manus-storage/brandt-logo_e831566c.png"
+                alt="Brandt Management Services — Infinite Possibilities"
+                className="h-20 w-auto object-contain"
+                style={{ maxWidth: "200px" }}
+              />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#9E9E9E", fontFamily: "'Nunito Sans', sans-serif", maxWidth: "340px" }}>
               Established in 2012, Brandt Management Services has built a trusted reputation across the Southeast United States. From a simple handyman service to a full-spectrum property solutions company — infinite possibilities.

@@ -42,27 +42,13 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div
-            className="w-9 h-9 flex items-center justify-center rounded-sm font-extrabold text-sm"
-            style={{ backgroundColor: "#FFB800", color: "#111111", fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.05em" }}
-          >
-            BMS
-          </div>
-          <div className="flex flex-col leading-none">
-            <span
-              className="font-extrabold text-white text-base tracking-wide"
-              style={{ fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.08em" }}
-            >
-              Brandt
-            </span>
-            <span
-              className="text-xs tracking-widest"
-              style={{ color: "#FFB800", fontFamily: "'Nunito Sans', sans-serif", fontWeight: 600, textTransform: "uppercase" }}
-            >
-              Management Services
-            </span>
-          </div>
+        <Link href="/" className="flex items-center group">
+          <img
+            src="/manus-storage/brandt-logo_e831566c.png"
+            alt="Brandt Management Services — Infinite Possibilities"
+            className="h-12 w-auto object-contain"
+            style={{ maxWidth: "160px" }}
+          />
         </Link>
 
         {/* Desktop nav */}
