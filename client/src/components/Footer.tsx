@@ -23,12 +23,19 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="lg:col-span-2">
-            <div className="mb-4">
+            <div className="flex items-center gap-6 mb-4">
               <img
                 src="/manus-storage/brandt-logo_e831566c.png"
                 alt="Brandt Management Services — Infinite Possibilities"
-                className="h-28 w-auto object-contain"
+                className="h-28 w-auto object-contain flex-shrink-0"
                 style={{ maxWidth: "260px" }}
+              />
+              <div className="w-px self-stretch" style={{ backgroundColor: "rgba(255,255,255,0.1)" }} />
+              <img
+                src="/manus-storage/becc-logo_308f88a8.png"
+                alt="Black Empowerment & Community Council"
+                className="h-20 w-auto object-contain flex-shrink-0"
+                style={{ maxWidth: "220px" }}
               />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "#9E9E9E", fontFamily: "'Nunito Sans', sans-serif", maxWidth: "340px" }}>
