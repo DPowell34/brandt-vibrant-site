@@ -8,8 +8,8 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle, Shield, Clock, Award, Users } from "lucide-react";
 
-const ABOUT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663692315913/6dQMTfvF4LGTu7uMM699bT/brandt-about-G5cHGSoHVZvJWRe42y2DoM.webp";
-const TOOLS_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663692315913/6dQMTfvF4LGTu7uMM699bT/brandt-services-4dU4vCycHqWK68uHhgTN9c.webp";
+const ABOUT_IMG = "/manus-storage/brandt-about_a8e9f92b.jpg";
+const TOOLS_IMG = "/manus-storage/brandt-services_26bfcebf.jpg";
 
 const values = [
   {

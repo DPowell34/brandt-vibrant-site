@@ -11,9 +11,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
-const HERO_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663692315913/6dQMTfvF4LGTu7uMM699bT/brandt-hero-S6gu378aqBmPtLWpfVDK4L.webp";
-const ABOUT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663692315913/6dQMTfvF4LGTu7uMM699bT/brandt-about-G5cHGSoHVZvJWRe42y2DoM.webp";
-const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663692315913/6dQMTfvF4LGTu7uMM699bT/brandt-cta-bg-354m7pZaXV9NqEeEfirTqJ.webp";
+const HERO_IMG = "/manus-storage/brandt-hero_9f1d104a.jpg";
+const ABOUT_IMG = "/manus-storage/brandt-about_a8e9f92b.jpg";
+const CTA_BG = "/manus-storage/brandt-cta-bg_7accd48e.jpg";
 
 const stats = [
   { value: "2012", label: "Est. Year" },
