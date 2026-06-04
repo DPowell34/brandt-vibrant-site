@@ -25,14 +25,14 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-6 mb-4">
               <img
-                src={`${import.meta.env.BASE_URL}brandt-logo.svg`}
+                src={`${import.meta.env.BASE_URL}brandt-logo.png`}
                 alt="Brandt Management Services — Infinite Possibilities"
                 className="h-28 w-auto object-contain flex-shrink-0"
                 style={{ maxWidth: "260px" }}
               />
               <div className="w-px self-stretch" style={{ backgroundColor: "rgba(255,255,255,0.1)" }} />
               <img
-                src={`${import.meta.env.BASE_URL}becc-logo.svg`}
+                src={`${import.meta.env.BASE_URL}becc-logo.png`}
                 alt="Black Empowerment & Community Council"
                 className="h-20 w-auto object-contain flex-shrink-0"
                 style={{ maxWidth: "220px" }}
