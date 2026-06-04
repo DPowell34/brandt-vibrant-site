@@ -10,7 +10,7 @@ import { Link } from "wouter";
 import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
 
-const CTA_BG = "/manus-storage/brandt-cta-bg_7accd48e.jpg";
+const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663692315913/6dQMTfvF4LGTu7uMM699bT/brandt-cta-bg-354m7pZaXV9NqEeEfirTqJ.webp";
 
 const contactInfo = [
   {

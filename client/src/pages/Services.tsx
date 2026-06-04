@@ -11,7 +11,7 @@ import {
   Lightbulb, Wind, Sparkles, DoorOpen, Leaf, Zap, Waves, ArrowRight, Phone
 } from "lucide-react";
 
-const TOOLS_IMG = "/manus-storage/brandt-services_26bfcebf.jpg";
+const TOOLS_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663692315913/6dQMTfvF4LGTu7uMM699bT/brandt-services-4dU4vCycHqWK68uHhgTN9c.webp";
 
 const services = [
   {
