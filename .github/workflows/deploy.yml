@@ -1,43 +1,25 @@
-name: Deploy to GitHub Pages
+name: Deploy to EC2
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-      - run: pnpm install --no-frozen-lockfile
-      - run: pnpm exec vite build
-      # SPA fallback so deep links (e.g. /about) work on GitHub Pages
-      - run: cp dist/public/index.html dist/public/404.html
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/public
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: SSH to EC2 and redeploy
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            set -e
+            export PATH="$PATH:/usr/bin:/usr/local/bin"
+            cd ~/brandt-vibrant-site
+            git pull origin main
+            pnpm install --no-frozen-lockfile
+            pnpm build
+            pm2 restart brandt
