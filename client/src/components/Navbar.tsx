@@ -44,7 +44,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <img
-            src="/brandt-logo.svg"
+            src={`${import.meta.env.BASE_URL}brandt-logo.svg`}
             alt="Brandt Management Services — Infinite Possibilities"
             className="w-auto object-contain"
             style={{ height: "100px", maxWidth: "260px" }}
