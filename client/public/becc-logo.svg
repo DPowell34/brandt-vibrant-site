@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 360" width="1680" height="360" role="img" aria-label="BECC Black Empowerment and Community Council">
+  <title>BECC - Black Empowerment and Community Council</title>
+  <rect x="20" y="30" width="250" height="250" rx="12" fill="#1c2c44"/>
+  <g transform="translate(20,30)">
+    <path d="M70 38 C40 95 40 165 96 232 C70 170 78 112 116 70 C100 60 84 50 70 38 Z" fill="#2e7d54"/>
+    <path d="M120 44 C160 60 178 92 170 128 C150 104 132 92 110 86 C112 70 116 56 120 44 Z" fill="#c0392b"/>
+    <path d="M108 92 C158 96 186 126 184 168 C162 142 138 132 110 134 C108 120 108 106 108 92 Z" fill="#c98a1e"/>
+    <rect x="104" y="150" width="84" height="74" rx="16" fill="#f5c518"/>
+  </g>
+  <text x="312" y="190" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="190" letter-spacing="4" fill="#1c2c44">BECC</text>
+  <text x="316" y="258" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="700" font-size="42" letter-spacing="3" fill="#c0432b">BLACK EMPOWERMENT &amp; COMMUNITY COUNCIL</text>
+</svg>

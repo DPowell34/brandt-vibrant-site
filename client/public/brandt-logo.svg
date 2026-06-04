@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 620" width="460" height="620" role="img" aria-label="BRANDT — Infinite Possibilities">
+  <title>BRANDT — Infinite Possibilities</title>
+  <!-- Stacked isometric icon: bright yellow top layers, fading grey body -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- grey body chevrons, fading downward (drawn first, behind) -->
+    <polyline points="115,250 230,172 345,250" stroke="#525252" stroke-width="20" opacity="0.80"/>
+    <polyline points="115,304 230,226 345,304" stroke="#525252" stroke-width="20" opacity="0.55"/>
+    <polyline points="115,358 230,280 345,358" stroke="#525252" stroke-width="20" opacity="0.32"/>
+    <polyline points="115,196 230,118 345,196" stroke="#4a4a4a" stroke-width="20" opacity="0.95"/>
+    <!-- bright yellow top chevrons -->
+    <polyline points="115,150 230,72 345,150" stroke="#FFB800" stroke-width="20"/>
+    <polyline points="130,196 230,128 330,196" stroke="#FFB800" stroke-width="20"/>
+    <polyline points="148,242 230,186 312,242" stroke="#FFB800" stroke-width="20"/>
+  </g>
+  <!-- wordmark -->
+  <text x="230" y="500" text-anchor="middle" font-family="'Arial Black','Helvetica Neue',Arial,sans-serif" font-weight="900" font-size="92" letter-spacing="5" fill="#FFFFFF">BRANDT</text>
+  <!-- tagline -->
+  <text x="230" y="560" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-weight="400" font-size="40" letter-spacing="6" fill="#c9c9c9">Infinite Possibilities</text>
+</svg>
