@@ -2,7 +2,7 @@
    BRANDT MANAGEMENT SERVICES — Navbar
    Design: High-Contrast Urban Professional
    Dark background, yellow logo accent, yellow active links
-   ============================================================ */
+============================================================ */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
@@ -42,17 +42,19 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between" style={{ minHeight: "112px" }}>
         {/* Logo */}
-        <Link href="/" className="flex items-center group">
+        <Link href="/" className="flex items-center group" aria-label="Brandt Management Services — Home">
           <img
             src={`${import.meta.env.BASE_URL}brandt-logo.png`}
             alt="Brandt Management Services — Infinite Possibilities"
             className="w-auto object-contain"
+            width={260}
+            height={100}
             style={{ height: "100px", maxWidth: "260px" }}
           />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {navLinks.map((link) => {
             const isActive = location === link.href;
             return (
@@ -60,6 +62,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className="text-sm font-semibold tracking-widest uppercase transition-colors duration-150"
+                aria-current={isActive ? "page" : undefined}
                 style={{
                   fontFamily: "'Barlow Condensed', sans-serif",
                   color: isActive ? "#FFB800" : "#D1D1D1",
@@ -78,8 +81,9 @@ export default function Navbar() {
           href="tel:8005929092"
           className="hidden md:flex items-center gap-2 btn-yellow text-sm"
           style={{ padding: "0.5rem 1.25rem" }}
+          aria-label="Call Brandt Management Services at (800) 592-9092"
         >
-          <Phone size={15} />
+          <Phone size={15} aria-hidden="true" />
           (800) 592-9092
         </a>
 
@@ -87,19 +91,22 @@ export default function Navbar() {
         <button
           className="md:hidden p-2 rounded text-white"
           onClick={() => setMenuOpen((v) => !v)}
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-nav"
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {menuOpen && (
         <div
+          id="mobile-nav"
           className="md:hidden"
           style={{ backgroundColor: "#111111", borderTop: "1px solid rgba(255,184,0,0.2)" }}
         >
-          <nav className="container py-4 flex flex-col gap-4">
+          <nav className="container py-4 flex flex-col gap-4" aria-label="Mobile navigation">
             {navLinks.map((link) => {
               const isActive = location === link.href;
               return (
@@ -107,6 +114,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className="text-base font-bold tracking-widest uppercase py-2"
+                  aria-current={isActive ? "page" : undefined}
                   style={{
                     fontFamily: "'Barlow Condensed', sans-serif",
                     color: isActive ? "#FFB800" : "#D1D1D1",
@@ -120,9 +128,11 @@ export default function Navbar() {
             })}
             <a
               href="tel:8005929092"
-              className="btn-yellow mt-2 justify-center"
+              className="flex items-center gap-2 btn-yellow text-sm mt-2"
+              style={{ padding: "0.5rem 1.25rem", alignSelf: "flex-start" }}
+              aria-label="Call Brandt Management Services"
             >
-              <Phone size={15} />
+              <Phone size={15} aria-hidden="true" />
               (800) 592-9092
             </a>
           </nav>
